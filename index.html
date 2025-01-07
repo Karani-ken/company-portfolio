@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelyne Media Solutions - IT Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-white text-black">
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-white   to-sky-500 text-black py-4 md:py-0 flex">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold flex items-center">
+        <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16 md:h-28">
+        Kelyne Media Solutions
+      </h1>
+      <button id="menu-btn" class="text-2xl md:hidden">☰</button>
+    </div>
+    <nav id="side-nav" class="hidden fixed inset-0 bg-slate-200  text-white p-4 z-50 md:relative md:flex md:items-center md:justify-between md:bg-transparent">
+      <div class="flex justify-between items-center md:hidden">
+        <h1 class="text-2xl font-bold flex items-center text-black">
+          <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16">
+          Kelyne Media Solutions
+        </h1>
+        <button id="close-btn" class="text-2xl text-black">✕</button>
+      </div>
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-black">
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center" style="background-image: url('/assets/pic3.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-t from-white  to-sky-500 opacity-50"></div>
+    <div class="relative py-32 text-center text-white">
+      <h2 class="text-5xl font-bold mb-4">Welcome to Kelyne Media Solutions</h2>
+      <p class="text-lg mb-8">Your trusted partner in IT Solutions, Graphics Design, Bulk SMS, and more.</p>
+      <a href="#services" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Logo Section -->
+  <section class="py-16 bg-white text-center">
+    <div class="container mx-auto px-4">
+      <img src="/assets/Logo.png" alt="Kelyne Media Solutions Logo" class="mx-auto mb-6 h-64">
+      <p class="text-gray-700 text-lg">Empowering businesses with innovative IT solutions.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">About Us</h2>
+      <p class="text-lg text-gray-700 mb-6">Kelyne Media Solutions is a premier IT company specializing in providing tailored solutions to businesses of all sizes. With a dedicated team of experts, we deliver excellence in software development, graphics design, bulk SMS services, system integration, IT consultation, and support. Our mission is to empower businesses with innovative technology solutions that drive success.</p>
+     
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/soft.png" alt="Software Development" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Software Development</h3>
+          <p class="text-gray-700">Custom software solutions tailored to meet your business needs.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/graphic-design.jpg" alt="Graphics Design" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Graphics Design</h3>
+          <p class="text-gray-700">Creative designs that elevate your brand identity.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/Marketing.jpg" alt="Bulk SMS" class="mb-4 rounded ">
+          <h3 class="text-xl font-bold mb-2">Bulk SMS</h3>
+          <p class="text-gray-700">Reach your audience instantly with bulk messaging services.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/integration-system.jpg" alt="System Integration" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">System Integration</h3>
+          <p class="text-gray-700">Seamlessly connect your systems for optimal efficiency.</p>
+        </div>
+        <!-- Service 5 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/consultation.jpeg" alt="IT Consultation" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">IT Consultation</h3>
+          <p class="text-gray-700">Expert advice to navigate complex IT challenges.</p>
+        </div>
+        <!-- Service 6 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/pic7.png" alt="IT Support" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">IT Support</h3>
+          <p class="text-gray-700">Reliable support to keep your business running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Our Projects</h2>
+      <p class="text-gray-700 mb-8">Here are some of the projects we have successfully delivered for our clients.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/soko-kuu.svg" alt="Project 1" class="mb-4 rounded h-40 w-full">
+          <h3 class="text-xl font-bold mb-2">E-Commerce Platform (Soko-Kuu)</h3>
+          <p class="text-gray-700 mb-3">Developed a robust and scalable online shopping platform.</p>
+         <a href="https://soko-kuu.co.ke/" class="text-white bg-sky-500 p-2 rounded-md">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/realtorLogo.png" alt="Project 2" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Realtor Space</h3>
+          <p class="text-gray-700 mb-3">Built a Rental Management and Booking system to streamline client booking and management.</p>
+          <a href="#projects" class="text-white bg-sky-500 p-2 rounded-md">View Project</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white shadow-md p-6 rounded card">
+          <img src="/assets/Logo.png" alt="Project 3" class="mb-4 rounded h-52 w-full">
+          <h3 class="text-xl font-bold mb-2">Kelyne Media Solutions Campaign</h3>
+          <p class="text-gray-700 mb-3">Designed a complete branding package for a leading startup.</p>
+          <a href="#projects" class="text-white bg-sky-500 p-2 rounded-md">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="text-gray-700 mb-6">Have questions or want to work with us? Get in touch!</p>
+      <div class="flex flex-col items-center space-y-4">
+        <a href="mailto:info@kelynemedia.co.ke" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">Email Us</a>
+        <a href="https://wa.me/768852727" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Kelyne Media Solutions. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="hover:text-sky-500">Facebook</a>
+        <a href="#" class="hover:text-sky-500">Twitter</a>
+        <a href="#" class="hover:text-sky-500">LinkedIn</a>
+        <a href="#" class="hover:text-sky-500">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const sideNav = document.getElementById('side-nav');
+
+    menuBtn?.addEventListener('click', () => sideNav.classList.remove('hidden'));
+    closeBtn?.addEventListener('click', () => sideNav.classList.add('hidden'));
+  </script>
+</body>
+</html>
