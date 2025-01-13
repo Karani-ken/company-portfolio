@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelyne Media Solutions - Software Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-black">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-white   to-sky-500 text-black py-4 md:py-0 flex">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold flex items-center">
+                <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16 md:h-28">
+                Kelyne Media Solutions
+            </h1>
+            <button id="menu-btn" class="text-2xl md:hidden">☰</button>
+        </div>
+        <nav id="side-nav"
+            class="hidden fixed inset-0 bg-slate-200  text-white p-4 z-50 md:relative md:flex md:items-center md:justify-between md:bg-transparent">
+            <div class="flex justify-between items-center md:hidden">
+                <h1 class="text-2xl font-bold flex items-center text-black">
+                    <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16">
+                    Kelyne Media Solutions
+                </h1>
+                <button id="close-btn" class="text-2xl text-black">✕</button>
+            </div>
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-black">
+                <li><a href="/" class="hover:underline">Home</a></li>              
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Software Development Services</h2>
+            <p class="text-lg text-gray-800">Empowering businesses with tailored software solutions that drive success.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/custom.jpg" alt="Custom Software"
+                    class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Custom Software Development</h3>
+                <p class="text-gray-700 mt-2">We build tailored software solutions to meet your unique business
+                    requirements, ensuring seamless performance and scalability.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/mobile 3d.jpg" alt="Mobile Apps"
+                    class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Mobile Application Development</h3>
+                <p class="text-gray-700 mt-2">Our team creates high-performing iOS and Android apps that enhance user
+                    experiences and expand your reach.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/web.jpg" alt="Web Applications"
+                    class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Web Application Development</h3>
+                <p class="text-gray-700 mt-2">From e-commerce platforms to business tools, we design and build
+                    responsive web applications tailored to your needs.</p>
+            </div>
+        </section>
+
+        <!-- Additional Services Section -->
+        <section class="mt-12">
+            <h3 class="text-3xl font-bold mb-6 text-center">Other Services We Offer</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex items-start">
+                    <img src="/assets/cloud.jpg" alt="Cloud Solutions" class="w-20 h-20 mr-4">
+                    <div>
+                        <h4 class="text-xl font-bold">Cloud-Based Solutions</h4>
+                        <p class="text-gray-700">Scalable and secure cloud applications to support your business growth
+                            and operations.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="/assets/crms.jpg" alt="CRM Systems" class="w-20 h-20 mr-4">
+                    <div>
+                        <h4 class="text-xl font-bold">CRM Systems</h4>
+                        <p class="text-gray-700">Comprehensive customer relationship management tools to enhance
+                            customer engagement and retention.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Kelyne Media Solutions. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-sky-500">Facebook</a>
+                <a href="#" class="hover:text-sky-500">Twitter</a>
+                <a href="#" class="hover:text-sky-500">LinkedIn</a>
+                <a href="#" class="hover:text-sky-500">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sideNav = document.getElementById('side-nav');
+
+        menuBtn?.addEventListener('click', () => sideNav.classList.remove('hidden'));
+        closeBtn?.addEventListener('click', () => sideNav.classList.add('hidden'));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelyne Media Solutions - Bulk SMS Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-black">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-white to-sky-500 text-black py-4 md:py-0 flex">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold flex items-center">
+                <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16 md:h-28">
+                Kelyne Media Solutions
+            </h1>
+            <button id="menu-btn" class="text-2xl md:hidden">☰</button>
+        </div>
+        <nav id="side-nav"
+            class="hidden fixed inset-0 bg-slate-200 text-white p-4 z-50 md:relative md:flex md:items-center md:justify-between md:bg-transparent">
+            <div class="flex justify-between items-center md:hidden">
+                <h1 class="text-2xl font-bold flex items-center text-black">
+                    <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16">
+                    Kelyne Media Solutions
+                </h1>
+                <button id="close-btn" class="text-2xl text-black">✕</button>
+            </div>
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-black">
+                <li><a href="/" class="hover:underline">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Bulk SMS Services</h2>
+            <p class="text-lg text-gray-800">Reach your audience instantly with our reliable and efficient bulk SMS services.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/sms-campaign.webp" alt="SMS Campaigns" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Promotional SMS Campaigns</h3>
+                <p class="text-gray-700 mt-2">Boost your business visibility with targeted SMS campaigns to promote your products or services.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/sms-trans.webp" alt="Transactional SMS" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Transactional SMS</h3>
+                <p class="text-gray-700 mt-2">Send instant alerts, notifications, and updates with our secure transactional SMS services.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/sms-api.jpg" alt="SMS API" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">SMS API Integration</h3>
+                <p class="text-gray-700 mt-2">Integrate our robust SMS API into your systems for seamless communication with your customers.</p>
+            </div>
+        </section>
+
+        <!-- Additional Services Section -->
+        <section class="mt-12">
+            <h3 class="text-3xl font-bold mb-6 text-center">Why Choose Us?</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex items-start">
+                    <img src="/assets/delivery-sms.png" alt="Reliable Services" class="w-20 h-20 mr-4">
+                    <div>
+                        <h4 class="text-xl font-bold">Reliable Delivery</h4>
+                        <p class="text-gray-700">Our advanced infrastructure ensures your messages are delivered quickly and accurately.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="/assets/analytics.webp" alt="Analytics" class="w-20 h-20 mr-4">
+                    <div>
+                        <h4 class="text-xl font-bold">Detailed Analytics</h4>
+                        <p class="text-gray-700">Gain insights into your campaigns with our detailed delivery and engagement reports.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Kelyne Media Solutions. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-sky-500">Facebook</a>
+                <a href="#" class="hover:text-sky-500">Twitter</a>
+                <a href="#" class="hover:text-sky-500">LinkedIn</a>
+                <a href="#" class="hover:text-sky-500">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sideNav = document.getElementById('side-nav');
+
+        menuBtn?.addEventListener('click', () => sideNav.classList.remove('hidden'));
+        closeBtn?.addEventListener('click', () => sideNav.classList.add('hidden'));
+    </script>
+</body>
+
+</html>

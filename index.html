@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     }
   </style>
 </head>
+
 <body class="bg-white text-black">
   <!-- Navbar -->
   <header class="bg-gradient-to-r from-white   to-sky-500 text-black py-4 md:py-0 flex">
@@ -23,7 +25,8 @@
       </h1>
       <button id="menu-btn" class="text-2xl md:hidden">☰</button>
     </div>
-    <nav id="side-nav" class="hidden fixed inset-0 bg-slate-200  text-white p-4 z-50 md:relative md:flex md:items-center md:justify-between md:bg-transparent">
+    <nav id="side-nav"
+      class="hidden fixed inset-0 bg-slate-200  text-white p-4 z-50 md:relative md:flex md:items-center md:justify-between md:bg-transparent">
       <div class="flex justify-between items-center md:hidden">
         <h1 class="text-2xl font-bold flex items-center text-black">
           <img src="/assets/Logo.png" alt="Kelyne Logo" class="mr-2 h-16">
@@ -32,6 +35,7 @@
         <button id="close-btn" class="text-2xl text-black">✕</button>
       </div>
       <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-black">
+        <li><a href="/" class="hover:underline">Home</a></li>
         <li><a href="#about" class="hover:underline">About</a></li>
         <li><a href="#services" class="hover:underline">Services</a></li>
         <li><a href="#projects" class="hover:underline">Projects</a></li>
@@ -62,8 +66,13 @@
   <section id="about" class="py-16">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p class="text-lg text-gray-700 mb-6">Kelyne Media Solutions is a premier IT company specializing in providing tailored solutions to businesses of all sizes. With a dedicated team of experts, we deliver excellence in software development, graphics design, bulk SMS services, system integration, IT consultation, and support. Our mission is to empower businesses with innovative technology solutions that drive success.</p>
-     
+      <p class="text-lg text-gray-700 mb-6">Kelyne Media Solutions is a premier IT company specializing in providing
+        tailored solutions to
+        businesses of all sizes. With a dedicated team of experts, we deliver excellence in software development,
+        graphics design,
+        bulk SMS services, system integration, IT consultation, and support. Our mission is to empower businesses with
+        innovative technology solutions that drive success.</p>
+
     </div>
   </section>
 
@@ -77,6 +86,7 @@
           <img src="/assets/soft.png" alt="Software Development" class="mb-4 rounded">
           <h3 class="text-xl font-bold mb-2">Software Development</h3>
           <p class="text-gray-700">Custom software solutions tailored to meet your business needs.</p>
+          <a class="text-sky-500 hover:underline cursor-pointer" href="/softwares.html">Read more</a>
         </div>
         <!-- Service 2 -->
         <div class="bg-white shadow-md p-6 rounded card">
@@ -89,6 +99,7 @@
           <img src="/assets/Marketing.jpg" alt="Bulk SMS" class="mb-4 rounded ">
           <h3 class="text-xl font-bold mb-2">Bulk SMS</h3>
           <p class="text-gray-700">Reach your audience instantly with bulk messaging services.</p>
+          <a class="text-sky-500 hover:underline cursor-pointer" href="/bulk-sms.html">Read more</a>
         </div>
         <!-- Service 4 -->
         <div class="bg-white shadow-md p-6 rounded card">
@@ -123,13 +134,14 @@
           <img src="/assets/soko-kuu.svg" alt="Project 1" class="mb-4 rounded h-40 w-full">
           <h3 class="text-xl font-bold mb-2">E-Commerce Platform (Soko-Kuu)</h3>
           <p class="text-gray-700 mb-3">Developed a robust and scalable online shopping platform.</p>
-         <a href="https://soko-kuu.co.ke/" class="text-white bg-sky-500 p-2 rounded-md">View Project</a>
+          <a href="https://soko-kuu.co.ke/" class="text-white bg-sky-500 p-2 rounded-md">View Project</a>
         </div>
         <!-- Project 2 -->
         <div class="bg-white shadow-md p-6 rounded card">
           <img src="/assets/realtorLogo.png" alt="Project 2" class="mb-4 rounded">
           <h3 class="text-xl font-bold mb-2">Realtor Space</h3>
-          <p class="text-gray-700 mb-3">Built a Rental Management and Booking system to streamline client booking and management.</p>
+          <p class="text-gray-700 mb-3">Built a Rental Management and Booking system to streamline client booking and
+            management.</p>
           <a href="#projects" class="text-white bg-sky-500 p-2 rounded-md">View Project</a>
         </div>
         <!-- Project 3 -->
@@ -149,8 +161,10 @@
       <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
       <p class="text-gray-700 mb-6">Have questions or want to work with us? Get in touch!</p>
       <div class="flex flex-col items-center space-y-4">
-        <a href="mailto:info@kelynemedia.co.ke" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">Email Us</a>
-        <a href="https://wa.me/768852727" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">WhatsApp Us</a>
+        <a href="mailto:info@kelynemedia.co.ke" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">Email
+          Us</a>
+        <a href="https://wa.me/768852727" class="bg-sky-500 text-white py-2 px-6 rounded hover:bg-sky-600">WhatsApp
+          Us</a>
       </div>
     </div>
   </section>
@@ -177,4 +191,5 @@
     closeBtn?.addEventListener('click', () => sideNav.classList.add('hidden'));
   </script>
 </body>
+
 </html>
